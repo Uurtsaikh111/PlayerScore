@@ -12,7 +12,12 @@ export default function App() {
       </div>
       <p>Hidden in the middle of text</p>
       <div className="body">
-        <div className="card"></div>
+        <div className="card">
+          <h4>John Cena</h4>
+          <div className="buttons">
+
+          </div>
+        </div>
       </div>
     </div>
   );
