@@ -4,34 +4,67 @@
   padding: 0;
 }
 .container {
-  /* width: 530px; */
-  height: 533px;
+  width: 530px;
+
   margin: auto;
   margin-top: 100px;
   border-radius: 24px;
   border: solid 1px rgb(230, 228, 228);
   padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .container p {
   opacity: 60%;
-  /* width: 466px; */
   height: 19px;
 }
+
 .card {
   display: flex;
   justify-content: space-between;
-  /* width: 466px; */
   height: 72px;
-  padding: 16px, 0px, 16px, 0px;
-  background-color: aqua;
+  align-items: center;
+  border-bottom: solid 0.5px rgb(242, 241, 241);
 }
+
 .score {
+  width: 128px;
   display: flex;
-  width: 100px;
+  gap: 10px;
 }
-.score .buttonsOperators {
-  height: 40px;
+.score button {
   width: 40px;
-  padding: 20px;
-  /* border-radius: 50%; */
+  height: 40px;
+  border-radius: 50%;
+  border: solid 0.2px rgb(235, 233, 233);
+  background-color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+span {
+  display: flex;
+  font-weight: 700;
+  font-size: 20px;
+  align-items: center;
+}
+.resetBtn {
+  display: flex;
+  gap:20px;
+  justify-content: end;
+
+}
+.resetBtn button {
+  width: 80px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #14b166;
+  color: white;
 }
