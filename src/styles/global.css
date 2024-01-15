@@ -56,9 +56,7 @@ span {
 }
 .resetBtn {
   display: flex;
-  gap:20px;
-  justify-content: end;
-
+  gap: 20px;
 }
 .resetBtn button {
   width: 80px;
@@ -67,4 +65,18 @@ span {
   border-radius: 5px;
   background-color: #14b166;
   color: white;
+}
+
+input {
+  width: 120px;
+  height: 25px;
+  display: flex;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: solid 0.5px rgb(72, 64, 64);
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: end;
 }

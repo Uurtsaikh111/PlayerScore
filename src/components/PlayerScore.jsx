@@ -1,22 +1,5 @@
 import { useState } from "react";
-
-const players = [
-  {
-    id: 1,
-    playerName: "John Cena",
-    playerScore: 0,
-  },
-  {
-    id: 2,
-    playerName: "John John",
-    playerScore: 0,
-  },
-  {
-    id: 3,
-    playerName: "John Kena",
-    playerScore: 0,
-  },
-];
+import { players } from "../utils/playerList";
 
 export const PlayerScore = () => {
   const [scores, setScores] = useState(players);
@@ -25,11 +8,15 @@ export const PlayerScore = () => {
     const updatedScores = [...scores];
     updatedScores[index].playerScore += 1;
     setScores(updatedScores);
+    updatedScores.sort((b, a) => a.playerScore - b.playerScore);
+    setScores(updatedScores);
   };
 
   const decrease = (index) => {
     const updatedScores = [...scores];
     updatedScores[index].playerScore -= 1;
+    setScores(updatedScores);
+    updatedScores.sort((b, a) => a.playerScore - b.playerScore);
     setScores(updatedScores);
   };
 
